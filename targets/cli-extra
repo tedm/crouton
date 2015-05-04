@@ -4,7 +4,7 @@
 # found in the LICENSE file.
 REQUIRES='core'
 DESCRIPTION='Basic CLI tools such as ssh.'
-HOSTBIN='startcli'
+HOSTBIN='enter-chroot'
 CHROOTBIN='croutonpowerd'
 . "${TARGETSDIR:="$PWD"}/common"
 
@@ -12,5 +12,5 @@ CHROOTBIN='croutonpowerd'
 install dbus openssh-client kbd
 
 TIPS="$TIPS
-You can start a shell in a new VT via the startcli host command: sudo startcli
+You can start a shell in a new VT via the startcli host command: sudo enter-chroot
 "
